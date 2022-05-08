@@ -18,10 +18,10 @@ jobs:
       # - name: Remove Chrome
       #   run: sudo apt purge google-chrome-stable
       
-      - name: Install software
-        run: sudo apt install -y chromium-browser
+      # - name: Install software
+      #   run: sudo apt install -y chromium-browser
       - name: Install all necessary packages
-        run: pip install requests beautifulsoup4 pandas webdriver-manager selenium
+        run: pip install requests beautifulsoup4 pandas webdriver-manager selenium==3.8.1
       - name: Run the scraping script
         run: python scraper.py
 
