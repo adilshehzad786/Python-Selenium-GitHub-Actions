@@ -15,8 +15,8 @@ jobs:
         run: apt list --installed
       - name: Update Linux
         run: sudo apt-get update
-      - name: Remove Chrome
-        run: sudo apt purge google-chrome-stable
+      # - name: Remove Chrome
+      #   run: sudo apt purge google-chrome-stable
       
       - name: Install software
         run: sudo apt install -y chromium-browser
