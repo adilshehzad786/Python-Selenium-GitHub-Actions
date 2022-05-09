@@ -27,4 +27,4 @@ print(driver.title)
 driver.stop_client()
 driver.close()
 driver.quit()
-chrome_options.stop()
+
