@@ -23,3 +23,8 @@ driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
 
 driver.get('http://nytimes.com')
 print(driver.title)
+
+driver.stop_client()
+driver.close()
+driver.quit()
+chrome_options.stop()
